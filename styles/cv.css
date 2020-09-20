@@ -1,0 +1,73 @@
+/**Global Styles**/
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 72.5%;
+}
+
+h1, .info-sec{
+    text-align: center;
+}
+
+/**End of Global Styles**/
+
+/**Main Section Styles**/
+page{
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    padding: 4%;
+     
+}
+page[size="A4"] {  
+    width: 65%;
+    
+}
+hr{
+    width: 100%;
+    border: 0;
+    height: 2px;
+    background: #000;
+    background-image: linear-gradient(to right, #000, #000, #000);
+}
+.column{
+    float: left;
+}
+
+.left{
+    width: 75%;
+}
+
+.right{
+    width: 25%;
+    text-align: right;
+}
+ .no-date{
+    width: 100%;
+}
+.cv-info, .cv-info .gpa{
+    margin: 0 auto;
+}
+
+.cv-info, .cv-headings{
+    font-weight: bold;
+}
+
+.un-style{
+    font-weight: normal;
+}
+ @media (min-width: 250px) and (max-width: 850px){
+    page[size="A4"] {  
+        width: 100%;
+        
+    }
+ }
+/**ENd of Main Section Styles**/
