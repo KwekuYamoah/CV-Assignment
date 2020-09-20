@@ -11,7 +11,7 @@ body{
 }
 
 html, body {
-    min-height: 100%;
+    max-height: 100%;
 }
 
 body, div, form, input,select,p {
@@ -28,7 +28,7 @@ body {
     background-color: #61000d;
     background-size: cover;
 }
-h1,h2 {
+h1,h2, .header {
     text-transform: uppercase;
     
 }
@@ -36,24 +36,36 @@ h1,h2 {
 h2 {
 margin: 0 0 0 8px;
 }
+
+.header{
+    margin: 0 auto;
+    padding: 1.2%;
+    background-color: #0d0f11;
+    font-weight: bolder;
+    font-size: 200%;
+    text-align: center;
+}
 .main-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 5%;
+    padding: 4%;
     background: rgba(0, 0, 0, 0.5);
 }
 .left-part,form {
-    padding: 5%;
+    padding: 4%;
 }
 .left-part {
     text-align: center;
 }
-.fa-graduation-cap {
-        font-size: 72px;
+.fa-wpforms {
+        color: #eee;
+        font-size: 100%;
+        padding: 0.5%;
 }
+        
 form {
     background: #0d0f11;
 }
@@ -73,12 +85,18 @@ input, select {
     border: none;
     border-bottom: 1px solid #61000d;
 }
-input::placeholder {
+input::placeholder, select {
     color: rgb(252, 245, 245);
+    font-size: large;
 }
 option:focus {
     border: none;
 }
+
+.full-name{
+    padding-right: 5%;
+}
+
 option {
     background: #0d0f11;
     border: none;
@@ -90,7 +108,7 @@ option {
 .checkbox a {
     color: #61000d;
 }
-.checkbox a:hover {
+.checkbox a:hover{
     color: #d7ecf4;
 }
 button {
