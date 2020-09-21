@@ -257,31 +257,32 @@ function addressValidate(event){
 }
 
 function onSubmit(e){
-    
+    //Validate forms
+    form.addEventListener('submit', firstValidate);
+    form.addEventListener('submit', middleValidate);
+    form.addEventListener('submit', lastValidate);
+    form.addEventListener('submit', genderValidate);
+    form.addEventListener('submit', phoneValidate);
+    form.addEventListener('submit', addressValidate);
+    form.addEventListener('submit', emailValidate);
+
     if(localStorage.length === 7){
-        window.alert("Yo");
+        let submission = confirm("Do you want to submit?")
+        window.alert(submission)
         form.addEventListener("submit", e=>{
             location.href="cv.html"
+            form.reset();
         })
        
     }
     console.log(localStorage.length);
-    window.localStorage.clear();
     
     
 }
 
-function afterValidation(e){
 
-    
-}
 
 //attach event listener to form
-form.addEventListener('submit', firstValidate);
-form.addEventListener('submit', middleValidate);
-form.addEventListener('submit', lastValidate);
-form.addEventListener('submit', genderValidate);
-form.addEventListener('submit', phoneValidate);
-form.addEventListener('submit', addressValidate);
-form.addEventListener('submit', emailValidate);
+
+
 //form.addEventListener('submit', onSubmit);
