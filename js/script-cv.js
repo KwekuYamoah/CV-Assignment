@@ -10,7 +10,9 @@ email=localStorage.getItem("email");
 
 address=localStorage.getItem("address");
 
-document.getElementById("name").innerText=`${first} ${middle} ${last}`
-document.getElementById("address").innerText=`${address}`
-document.getElementById("phone").innerText=`${phone} /Ghanaian`
-document.getElementById("mail").innerText=`${email}`
+document.getElementById("name").innerText=`${first} ${middle} ${last}`;
+document.getElementById("address").innerText=`${address}`;
+document.getElementById("phone").innerText=`${phone} / Ghanaian`;
+document.getElementById("mail").innerText=`${email}`;
+
+window.localStorage.clear();

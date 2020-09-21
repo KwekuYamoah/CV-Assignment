@@ -48,7 +48,7 @@ function firstValidate(event){
     const toChange = document.getElementById('form-error');
 
     if(!first){
-        window.alert("hey name fields empty, please fill your first name");
+        //window.alert("hey name fields empty, please fill your first name");
     }
     
 
@@ -85,7 +85,7 @@ function middleValidate(event){
     const toChange = document.getElementById('form-error');
 
     if(!middle){
-        window.alert("hey name fields empty, please fill your middle name");
+        //window.alert("hey name fields empty, please fill your middle name");
     }
     //Local Storage
     else{
@@ -120,7 +120,7 @@ function lastValidate(event){
     const toChange = document.getElementById('form-error');
 
     if(!last){
-        window.alert("hey name fields empty, please fill your last name");
+        //window.alert("hey name fields empty, please fill your last name");
     }
     //Local Storage
     else{
@@ -190,7 +190,7 @@ function phoneValidate(event){
     const toChange = document.getElementById('form-error');
 
     if(!phone){
-        window.alert("Contact field Empty");
+        //window.alert("Contact field Empty");
     }
 
     //local storage
@@ -226,7 +226,7 @@ function addressValidate(event){
     const toChange = document.getElementById('form-error');
 
     if(!address){
-        window.alert("Address field is Empty");
+        //window.alert("Address field is Empty");
     }
 
     //local storage
@@ -258,7 +258,7 @@ function addressValidate(event){
 
 function onSubmit(e){
     //Validate forms
-    //attach event listener to form
+    
     form.addEventListener('submit', firstValidate);
     form.addEventListener('submit', middleValidate);
     form.addEventListener('submit', lastValidate);
@@ -270,6 +270,7 @@ function onSubmit(e){
     if(localStorage.length === 7){
         let submission = confirm("Do you want to submit?")
         window.alert(submission)
+        
         form.addEventListener("submit", e=>{
             location.href="cv.html"
             form.reset();
