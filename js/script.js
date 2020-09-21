@@ -258,6 +258,7 @@ function addressValidate(event){
 
 function onSubmit(e){
     //Validate forms
+    //attach event listener to form
     form.addEventListener('submit', firstValidate);
     form.addEventListener('submit', middleValidate);
     form.addEventListener('submit', lastValidate);
@@ -279,10 +280,3 @@ function onSubmit(e){
     
     
 }
-
-
-
-//attach event listener to form
-
-
-//form.addEventListener('submit', onSubmit);

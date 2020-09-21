@@ -56,6 +56,13 @@ hr{
 .cv-info, .cv-info .gpa{
     margin: 0 auto;
 }
+.info-sec, .info-name{
+    margin: 0 auto;
+}
+
+.info-sec{
+    font-weight: bold;
+}
 
 .cv-info, .cv-headings{
     font-weight: bold;
