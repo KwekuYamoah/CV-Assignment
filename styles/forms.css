@@ -80,7 +80,8 @@ form {
 }
 input, select {
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
+    margin-top: 0%;
     background: transparent;
     border: none;
     border-bottom: 1px solid #61000d;
@@ -134,19 +135,21 @@ button:hover {
 .error-element{
     border: 2px solid #61000d;
     font-weight: bolder;
+    box-shadow: 0 0 0.2cm rgb(247, 245, 245);
 }
 
 /*Error styling*/
 .error {
     width  : 100%;
     padding: 0.3%;
-    margin-bottom: 2%;
     margin-top: 0;
     font-size: 80%;
     color: #fff;
     background-color: #61000d;
     border-radius: 0 0 5px 5px;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
   
 }
 
