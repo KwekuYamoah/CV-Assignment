@@ -1,5 +1,5 @@
 
-/*const form  = document.getElementById('addForm');
+const form  = document.getElementById('addForm');
 
 
 //Writing my own Validation Function
@@ -271,4 +271,4 @@ form.addEventListener('submit', genderValidate);
 form.addEventListener('submit', phoneValidate);
 form.addEventListener('submit', addressValidate);
 form.addEventListener('submit', emailValidate);
-form.addEventListener('submit', onSubmit);*/
+form.addEventListener('submit', onSubmit);
