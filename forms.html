@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Ashesi CV Form</title>
     <script src="https://kit.fontawesome.com/6150b4470a.js" crossorigin="anonymous"></script>
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
@@ -19,7 +20,7 @@
         <img src="images/ashesi-3.jpg" alt="Image of Ashesi">
       </div>
 
-      <form action="/">
+      <form id="addForm" class="form-box" method="post" novalidate>
         <div class="title">
           <i class="fas fa-pencil-alt"></i>
           <h2>fill here</h2>
@@ -28,25 +29,33 @@
         <div class="info">
           <section>
             <input class="full-name" type="text" name="f_name" placeholder="First Name">
+            
             <input class="full-name" type="text" name="m_name" placeholder="Middle Name">
+    
             <input class="full-name" type="text" name="l_name" placeholder="Last Name">
+            
           </section>
           
           <select>
             <option value="gender-type" selected>[Select Gender*]</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
+
           </select>
 
           <input type="text" name="name" placeholder="Phone number">
-          <input type="email" name="email" placeholder="Email">
+
+          <input id="mail" type="email" name="email" placeholder="Email">
+          
           <input type="text" name="address" placeholder="Address">
+
+          <div id="mail-error" aria-live="polite"></div>
+
+          <button id="info-cv" type="submit" value="add">Submit</button>
         </div>
-
-        <button id="info-cv" type="submit" href="/" value="add">Submit</button>
-
       </form>
 
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
