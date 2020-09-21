@@ -256,11 +256,24 @@ function addressValidate(event){
 
 }
 
-function onSubmit(event){
-    event.preventDefault();
+function onSubmit(e){
+    
     if(localStorage.length === 7){
-        window.open("https://kwekuyamoah.github.io/CV-Assignment/", target="_self")
+        window.alert("Yo");
+        form.addEventListener("submit", e=>{
+            location.href="cv.html"
+        })
+       
     }
+    console.log(localStorage.length);
+    window.localStorage.clear();
+    
+    
+}
+
+function afterValidation(e){
+
+    
 }
 
 //attach event listener to form
@@ -271,4 +284,4 @@ form.addEventListener('submit', genderValidate);
 form.addEventListener('submit', phoneValidate);
 form.addEventListener('submit', addressValidate);
 form.addEventListener('submit', emailValidate);
-form.addEventListener('submit', onSubmit);
+//form.addEventListener('submit', onSubmit);

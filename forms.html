@@ -8,7 +8,7 @@
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
     <link rel="stylesheet" href="styles/forms.css">
-    <script src="js/script.js"></script>
+    
     
   </head>
   <body>
@@ -22,7 +22,7 @@
         <img src="images/ashesi-3.jpg" alt="Image of Ashesi">
       </div>
 
-      <form action="pages/cv.html" method="GET" target="_blank" id="addForm" class="form-box">
+      <form method="GET" target="_blank" id="addForm" class="form-box">
         <div class="title">
           <i class="fas fa-pencil-alt"></i>
           <h2>fill here</h2>
@@ -53,10 +53,12 @@
 
           <div id="form-error" aria-live="polite"></div>
 
-          <button id="info-cv" type="submit" form="addForm" value="Submit">Submit</button>
+          <button id="info-cv" type="submit" form="addForm" value="Submit" onclick="onSubmit()">Submit</button>
         </div>
       </form>
 
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
