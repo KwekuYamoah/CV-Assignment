@@ -1,3 +1,8 @@
+/*
+Name: Kweku Andoh Yamoah
+ID : 71712022
+Assignment: CV Assignment
+*/
 first=localStorage.getItem("f_name");
 
 middle=localStorage.getItem("m_name");

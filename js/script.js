@@ -1,3 +1,9 @@
+/*
+Name: Kweku Andoh Yamoah
+ID : 71712022
+Assignment: CV Assignment
+*/
+
 //get form object form the DOM
 const form  = document.getElementById('addForm');
 
