@@ -1,6 +1,9 @@
 //get form object form the DOM
 const form  = document.getElementById('addForm');
 
+//clear local storage before usage
+window.localStorage.clear();
+
 
 //Writing my own Validation Function
 
@@ -289,6 +292,7 @@ function onSubmit(e){
        
     }
     console.log(localStorage.length);
+    
     
     
 }
