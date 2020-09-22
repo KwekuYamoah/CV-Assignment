@@ -1,14 +1,18 @@
-
+//get form object form the DOM
 const form  = document.getElementById('addForm');
 
 
 //Writing my own Validation Function
-function emailValidate(event){
-    event.preventDefault();
 
-    const email= form.elements["email"].value;
+//function to validate emails
+function emailValidate(event){
+    event.preventDefault(); //prevent default event when triggered
+
+    const email= form.elements["email"].value; //get value of email element from form
+
     at_position = email.indexOf("@");
     dot_position = email.lastIndexOf(".");
+
     const toChange = document.getElementById('form-error');
     if(!email){
         window.alert("Email value missing or mismatch")
@@ -18,7 +22,7 @@ function emailValidate(event){
     }
     else{
         //Email Valid add to local storage
-        localStorage.setItem("email", email)
+        localStorage.setItem("email", email);
     }
 
     if(!email){
@@ -32,18 +36,21 @@ function emailValidate(event){
             //add CSS styling
             document.getElementById("email-para").classList.add("error");
             document.getElementById("mail").classList.add("error-element");
-            
         }
     }
     else if (toChange.querySelector("#email-para") != null){
+
         const para = document.getElementById("email-para").remove();
-        document.getElementById("email-para").classList.remove("error");
         document.getElementById("mail").classList.remove("error-element");
+        document.getElementById("email-para").classList.remove("error");
     }
 }
 
+
+//function to validate first name
 function firstValidate(event){
     event.preventDefault();
+
     const first = form.elements["f_name"].value;
     const toChange = document.getElementById('form-error');
 
@@ -59,6 +66,7 @@ function firstValidate(event){
     
     if(!first){
         if(toChange.querySelector("#first-para") == null){
+
             const para = document.createElement("p"); //creating a paragraph element
             para.id = "first-para"; //assign paragraph an id
             const text = document.createTextNode("First Name is Empty");
@@ -73,8 +81,9 @@ function firstValidate(event){
     }
     else if(toChange.querySelector("#first-para") != null){
         const para = document.getElementById("first-para").remove();
-        document.getElementById("first-para").classList.remove("error");
         document.getElementById("first").classList.remove("error-element");
+        document.getElementById("first-para").classList.remove("error");
+       
     }
 
 }
@@ -259,6 +268,7 @@ function addressValidate(event){
 function onSubmit(e){
     //Validate forms
     
+    
     form.addEventListener('submit', firstValidate);
     form.addEventListener('submit', middleValidate);
     form.addEventListener('submit', lastValidate);
@@ -266,6 +276,7 @@ function onSubmit(e){
     form.addEventListener('submit', phoneValidate);
     form.addEventListener('submit', addressValidate);
     form.addEventListener('submit', emailValidate);
+    
 
     if(localStorage.length === 7){
         let submission = confirm("Do you want to submit?")

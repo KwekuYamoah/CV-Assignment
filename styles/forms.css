@@ -135,7 +135,7 @@ button:hover {
 .error-element{
     border: 2px solid #61000d;
     font-weight: bolder;
-    box-shadow: 0 0 0.2cm rgb(247, 245, 245);
+    box-shadow: 0 0 0.5cm rgb(247, 245, 245);
 }
 
 /*Error styling*/
