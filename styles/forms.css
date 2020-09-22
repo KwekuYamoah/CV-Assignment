@@ -170,4 +170,8 @@ button:hover {
         height: auto;
         display: block;
     }
+    input::placeholder, select {
+        color: rgb(252, 245, 245);
+        font-size: normal;
+    }
 }
